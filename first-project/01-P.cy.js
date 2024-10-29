@@ -85,11 +85,11 @@ describe('Project 01', () => {
         .and("has.text", "SUBMIT");
     });
     it('Test Case 10 - Validate the form submission', () => {
-        cy.get(':nth-child(1) > .control > .input').type('Yousef Alselwadi');
+        cy.get(':nth-child(1) > .control > .input').type('Haider Dhari');
         cy.get('.mr-1').eq(0).click();
-        cy.get(':nth-child(3) > .control > .input').type('1234 w 56th st chicago illinois');
+        cy.get(':nth-child(3) > .control > .input').type('85 sheridan Dr Buffalo NY 14150');
         cy.get(':nth-child(4) > .control > .input').type('JohnDoe@gmail.com');
-        cy.get(':nth-child(5) > .control > .input').type('(012)234-5678');
+        cy.get(':nth-child(5) > .control > .input').type('(716)609-5351');
         cy.get('.textarea').type('I love JavaScript');
         cy.get('.checkbox').click();
         cy.get('.button').eq(2).click();
